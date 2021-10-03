@@ -1,8 +1,8 @@
 const inquirer = require('inquirer')
 const cTable = require('console.table')
-const {} = require('../lib/departments')
-const {} = require('../lib/roles')
-const {} = require('../lib/employees')
+const departments = require('../lib/departments')
+const roles = require('../lib/roles')
+const employees = require('../lib/employees')
 
 /**
  * @returns the handler to start the Employee-Tracker.
@@ -11,17 +11,17 @@ function prompt() {
 
     async function mainPrompt() {
 
+        const mainChoices = ['View all departments', 'View all roles', 'View all employees', 'Add a new department',
+        'Add a new role', 'Add a new employee', 'Update employee role and manager', 'Exit']
+
         const mainQuestion = {
             type: 'list',
             message: 'Please select an action.',
             choices: mainChoices,
             name: 'main',
-            pageSize: mainChoices.length(),
+            pageSize: mainChoices.length,
             loop: false
         }
-        
-        const mainChoices = ['View all departments', 'View all roles', 'View all employees', 'Add a new department',
-        'Add a new role', 'Add a new employee', 'Update employee role and manager', 'Exit']
 
         const answer = await inquirer.prompt(mainQuestion)
 
@@ -54,31 +54,46 @@ function prompt() {
     }
 
     async function viewDepartments() {
+        const allDepts = departments.allDepartments()
+        console.table(allDepts)
 
+        mainPrompt()
     }
 
     async function viewRoles() {
         
+
+        mainPrompt()
     }
 
     async function viewEmployees() {
         
+
+        mainPrompt()
     }
 
     async function addDepartment() {
         
+
+        mainPrompt()
     }
 
     async function addRole() {
         
+
+        mainPrompt()
     }
 
     async function addEmployee() {
         
+
+        mainPrompt()
     }
 
     async function updateEmployee() {
         
+
+        mainPrompt()
     }
 
     return {

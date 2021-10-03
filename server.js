@@ -1,7 +1,4 @@
-//Imports;
-require('dotenv').config();
+const employee_tracker = require('./src/prompts')
 
-//Launch express & middleware
-const PORT = process.env.PORT || 3001;
-
-
+// Begin console app.
+employee_tracker.start()
