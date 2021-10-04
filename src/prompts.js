@@ -61,13 +61,15 @@ function prompt() {
     }
 
     async function viewRoles() {
-        
+        const allRoles = roles.allRoles()
+        console.table(allRoles)
 
         mainPrompt()
     }
 
     async function viewEmployees() {
-        
+        const allEmployees = employees.allEmployees()
+        console.table(allEmployees)
 
         mainPrompt()
     }
