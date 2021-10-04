@@ -1,4 +1,3 @@
---Department seeds
 INSERT INTO department (name) VALUES
 ("Executive"),
 ("Information Technology"),
@@ -7,7 +6,6 @@ INSERT INTO department (name) VALUES
 ("Manufacturing"),
 ("Assembly");
 
---Role seeds
 INSERT INTO role (title, salary, isManager, department_id) VALUES
 ("CEO", 260000, 1, 1),
 ("IT Manager", 175000, 1, 2),
@@ -21,7 +19,6 @@ INSERT INTO role (title, salary, isManager, department_id) VALUES
 ("Assembly Manager", 100000, 1, 6),
 ("Assembler", 65000, 0, 6);
 
---Employee seeds
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
 ("Mark", "Krauzowicz", 1, null),
 ("Albert", "Einstein", 2, 1),
