@@ -17,4 +17,4 @@ console.log(`       ██    ██   ██ ██   ██ ██      ██
 console.log(`       ██    ██   ██ ██   ██  ██████ ██   ██ ███████ ██   ██         `)
 console.log(`                                                                     `)
 
-await mainPrompt()
+mainPrompt()
