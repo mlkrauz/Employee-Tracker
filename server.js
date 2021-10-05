@@ -1,4 +1,20 @@
-import { start } from './lib/prompts.js'
+import { mainPrompt } from './lib/prompts.js'
 
 // Begin console app.
-start()
+console.log(`                                                                     `)
+console.log(`███████ ███    ███ ██████  ██       ██████  ██    ██ ███████ ███████ `)
+console.log(`██      ████  ████ ██   ██ ██      ██    ██  ██  ██  ██      ██      `)
+console.log(`█████   ██ ████ ██ ██████  ██      ██    ██   ████   █████   █████   `)
+console.log(`██      ██  ██  ██ ██      ██      ██    ██    ██    ██      ██      `)
+console.log(`███████ ██      ██ ██      ███████  ██████     ██    ███████ ███████ `)
+console.log(`                                                                     `)
+console.log(`                                                                     `)
+console.log(`    ████████ ██████   █████   ██████ ██   ██ ███████ ██████          `)
+console.log(`       ██    ██   ██ ██   ██ ██      ██  ██  ██      ██   ██         `)
+console.log(`       ██    ██   ██ ██   ██ ██      ██  ██  ██      ██   ██         `)
+console.log(`       ██    ██████  ███████ ██      █████   █████   ██████          `)
+console.log(`       ██    ██   ██ ██   ██ ██      ██  ██  ██      ██   ██         `)
+console.log(`       ██    ██   ██ ██   ██  ██████ ██   ██ ███████ ██   ██         `)
+console.log(`                                                                     `)
+
+await mainPrompt()

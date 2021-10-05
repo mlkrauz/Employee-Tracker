@@ -6,7 +6,7 @@
     "mysql2": "^2.3.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node -r dotenv/config server.js"
   },
   "name": "Employee-Tracker",
   "version": "1.0.0",
@@ -15,7 +15,6 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mlkrauz/Employee-Tracker.git"
