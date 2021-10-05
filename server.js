@@ -1,4 +1,4 @@
-const employee_tracker = require('./src/prompts')
+import { start } from './lib/prompts.js'
 
 // Begin console app.
-employee_tracker.start()
+start()

@@ -1,6 +1,6 @@
-const mysql = require('mysql2/promise')
+import { createConnection } from 'mysql2/promise'
 
-const database = mysql.createConnection(
+export const db = createConnection(
     {
         host: 'localhost',
         database: process.env.DB_NAME,
@@ -8,5 +8,3 @@ const database = mysql.createConnection(
         password: process.env.DB_PASSWORD
     }
 )
-
-module.exports = database
